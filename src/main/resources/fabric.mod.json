@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "nice",
+  "version": "${version}",
+
+  "name": "nice",
+  "description": "A clientside minecraft mod that does some nice things.",
+  "authors": [
+    "Austin Albrecht"
+  ],
+  "contact": {
+    "homepage": "https://neat.moe/",
+    "sources": "https://github.com/Hoi15A/nice"
+  },
+
+  "license": "AGPL-3.0",
+  "icon": "assets/nice/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "moe.neat.NiceMod"
+    ],
+    "cotton-client-commands": ["moe.neat.Commands"]
+  },
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.15.2",
+    "cotton-client-commands": "^1.0.0"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
